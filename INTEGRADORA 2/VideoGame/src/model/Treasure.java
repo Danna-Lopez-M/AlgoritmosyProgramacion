@@ -11,7 +11,7 @@ public class Treasure{
     private int posY;
     ThreadLocalRandom newRandom = ThreadLocalRandom.current();
 
-    public Treasure(String name, String uRL, int givSc, int posX, int posY){
+    public Treasure(String name, String uRL, int givSc){
         this.name = name;
         this.uRL = uRL;
         this.givSc = givSc;

@@ -13,9 +13,9 @@ public class Enemy{
     ThreadLocalRandom newRandom = ThreadLocalRandom.current();
 
 
-    public Enemy(String name, String type, int subtrScr, int sumScr, int posX, int posY){
+    public Enemy(String name, int type, int subtrScr, int sumScr, int posX, int posY){
         this.name = name;
-        this.type = Type.valueOf(type.toUpperCase());
+        this.type = Type.values()[type];
         this.subtrScr = subtrScr;
         this.sumScr = sumScr;
         this.posX = newRandom.nextInt(0,1280);
